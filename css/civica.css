@@ -158,6 +158,20 @@
     bottom: 0;
 }
 
+.civica-points {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+}
+
+.civica-points li {
+    margin-bottom: 10px; /* Adds space between items */
+    font-size: 1.2rem;
+}
+
+.civica-points li strong {
+    font-weight: bold; /* Ensures the keyword is bold */
+}
+
 /* Section 3: App Features */
 .app-features {
     background-color: var(--bg-color);
@@ -223,38 +237,6 @@
     bottom: 0;
 }
 
-/* Style Guide Description */
-.style-guide-description {
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-/* Button Styling */
-.view-style-guide {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    gap: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.view-style-guide:hover {
-    background-color: var(--accent-color);
-}
-
-.view-style-guide .btn-icon {
-    font-size: 1.5rem;
-}
-
 /* Banner Image Styling */
 .style-guide-banner img {
     width: 85%;
@@ -265,9 +247,6 @@
     margin-left: 100px;
 }
 
-.view-style-guide-link {
-    text-decoration: none; 
-}
 
 /* Section 2.1: Civica Screen Video and Logo */
 .civica-screen-logo {
@@ -502,6 +481,60 @@
     color: var(--primary-color);
 }
 
+/* Challenges Section */
+.challenges-section {
+    background-color: var(--white); /* or any color you'd prefer */
+    padding: 40px var(--spacing);
+}
+
+.challenges-section .section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.challenges-section .section-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+/* Solution Section */
+.solution-section {
+    background-color: var(--light-gray); /* or any color you'd prefer */
+    padding: 40px var(--spacing);
+}
+
+.solution-section .section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.solution-section .section-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+/* Figma Embed Styling */
+.figma-embed-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.figma-embed-container iframe {
+    width: 100%;
+    height: 700px; /* Adjust the height as needed */
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 
 /* Adjust layout for smaller screens (iPhone 16 Pro Max) */
