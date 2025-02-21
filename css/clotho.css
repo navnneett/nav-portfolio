@@ -301,6 +301,16 @@
     text-decoration: none; 
 }
 
+.view-style-guide-link {
+    text-decoration: none; 
+    color: var(--bg-color);
+}
+
+.view-style-guide-link:visited,
+.view-style-guide-link:active {
+    color: var(--bg-color); /* Keep the same color when visited or active */
+}
+
 /* Section 2.1: Clotho Screen Video and Logo */
 .clotho-screen-logo {
     background-color: var(--white);

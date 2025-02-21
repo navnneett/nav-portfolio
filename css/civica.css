@@ -536,9 +536,52 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.image-container h3{
+    font-size: 1.5rem;
+    margin: 30px;
+}
+
+.image-container-promotion h3{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.image-container-promotion-story h3{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.video-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.view-style-guide-link {
+    text-decoration: none; 
+    color: var(--bg-color);
+}
+
+.view-style-guide-link:visited,
+.view-style-guide-link:active {
+    color: var(--bg-color); /* Keep the same color when visited or active */
+}
+
+video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
 
 /* Adjust layout for smaller screens (iPhone 16 Pro Max) */
 @media (max-width: 500px) {
+
+    .video-content {
+        flex-direction: column;
+    }
+
     .civica-section {
         padding: 60px 10px;
     }
