@@ -195,6 +195,7 @@ h1 {
 
 .comming-soon-banner {
     max-width: 500px;
+    border-color: var(--accent-color);
 }
 
 #game-container {
