@@ -5,7 +5,7 @@
 }
 
 .about-container {
-    max-width: 1250px;
+    max-width: 1200px;
     margin: auto;
 }
 .section-content {
@@ -21,17 +21,10 @@
     justify-content: flex-start;
 }
 
-.image-container {
-    display: flex;
-    justify-content: center; /* Center the image horizontally */
-    width: 100%; /* Ensure the container takes the full width */
-}
-
 .image-container img {
-    width: 85%;
-    max-width: 500px; /* Optionally set a max width for the image */
+    width: 80%;
+    border-radius: 10px;
 }
-
 
 .right-column {
     flex: 2; /* Takes less space */
@@ -40,11 +33,10 @@
     gap: 20px;
 }
 
-.left-column h1 {
+.title-description h1 {
     font-size: 3rem;
     font-weight: 600;
-    margin-bottom: 40px;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 .title-description p {
@@ -54,10 +46,6 @@
 
 .intro {
     margin-bottom: 20px;
-}
-
-.details {
-    margin-bottom: 30px;
 }
 
 /* Buttons Section */
@@ -188,27 +176,17 @@ h1 {
     margin-bottom: 10px;
 }
 
-.game-section {
-    max-width: 1250px;
-    margin: auto;
-}
-
-.comming-soon-banner {
-    max-width: 500px;
-}
-
 #game-container {
-    max-width: 1250px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background: var(--accent-color);
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 900px;
+    margin: 0 auto;
 }
 
 #magic-bunny {

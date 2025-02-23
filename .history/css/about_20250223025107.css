@@ -64,7 +64,7 @@
 .buttons {
     width: 48%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
 }
 
@@ -188,27 +188,17 @@ h1 {
     margin-bottom: 10px;
 }
 
-.game-section {
-    max-width: 1250px;
-    margin: auto;
-}
-
-.comming-soon-banner {
-    max-width: 500px;
-}
-
 #game-container {
-    max-width: 1250px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background: var(--accent-color);
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 900px;
+    margin: 0 auto;
 }
 
 #magic-bunny {
