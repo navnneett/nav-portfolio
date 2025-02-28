@@ -1,0 +1,802 @@
+/* Civica Section */
+.civica-logo img {
+    height: 50px; /* Adjust the size of the logo */
+    width: auto;  /* Maintain the aspect ratio */
+  }
+  
+.civica-section {
+    background-color: var(--bg-color);
+    padding: 40px var(--spacing);
+}
+
+.civica-container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* Section Content - Flex Layout */
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left Column: Title, Subtitle, Description */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title-description h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.title-description h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.description-text {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* Right Column: Banner Image */
+.right-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Banner Image */
+.banner-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    top: 0;
+    right: 0;
+    align-items: end;
+}
+
+/* Timeline and Buttons Side by Side */
+.timeline-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Timeline Section */
+.timeline {
+    width: 48%;
+    background-color: var(--accent-color);
+    padding: var(--spacing);
+    border-radius: 12px;
+}
+
+.timeline h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Buttons Section */
+.buttons {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Buttons Styling */
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+.btn-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* Section 2: Design Rationale */
+.design-rationale {
+    background-color: var(--white);
+    padding: 40px var(--spacing);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#design-rationale.visible {
+    opacity: 1;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+    text-align: left;
+    margin-top: 20px;
+    max-width: 1200px;
+}
+
+/* Section Title Styles with Underline */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin-top: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.civica-points {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+}
+
+.civica-points li {
+    margin-bottom: 10px; /* Adds space between items */
+    font-size: 1.2rem;
+}
+
+.civica-points li strong {
+    font-weight: bold; /* Ensures the keyword is bold */
+}
+
+/* Section 3: App Features */
+.app-features {
+    background-color: var(--bg-color);
+    padding: 40px var(--spacing);
+}
+
+.app-features .section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 30px;
+    position: relative;
+    color: var(--primary-color); /* Set the title color */
+}
+
+/* Underline styling */
+.app-features .section-title::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color); /* Underline color */
+    margin-top: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Banner Image Styling */
+.app-features-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+/* Section 4: Style Guide */
+.style-guide {
+    background-color: var(--white);
+    padding: 60px var(--spacing);
+}
+
+.style-guide .section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+    color: var(--primary-color); /* Set the title color */
+}
+
+/* Underline styling */
+.style-guide .section-title::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color); /* Underline color */
+    margin-top: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Banner Image Styling */
+.style-guide-banner img {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 0;
+    object-fit: cover;
+    margin-left: 100px;
+}
+
+
+/* Section 2.1: Civica Screen Video and Logo */
+.civica-screen-logo {
+    background-color: var(--white);
+    padding: 40px var(--spacing);
+}
+
+.civica-container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* Section Content - Flex Layout */
+.civica-screen-logo .section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left Column: Civica Screen Video */
+.civica-screen-logo .left-column {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+}
+
+.civica-screen-video img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Right Column: Civica Logo and Description */
+.civica-screen-logo .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.civica-logo img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.civica-description {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.try-app-link {
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.try-app {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.try-app:hover {
+    background-color: var(--accent-color);
+}
+
+.try-app .btn-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* Section 5: UI Design */
+.ui-design {
+    background-color: var(--white);
+    padding: 60px var(--spacing);
+}
+
+.ui-design .section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 30px;
+    position: relative;
+    color: var(--primary-color); /* Set the title color */
+}
+
+/* Underline styling for UI Design title */
+.ui-design .section-title::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color); /* Underline color */
+    margin-top: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Image Container for all UI Design Images */
+.image-container {
+    margin-bottom: 30px; /* Adds space between images */
+    text-align: center; /* Centers the images */
+}
+
+/* Image Styling for UI Design Section */
+.ui-design-image {
+    width: 100%;
+    max-width: 2000px; /* Ensures the image does not overflow */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Makes sure the images maintain aspect ratio */
+}
+
+/* User Research Section */
+.user-research-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px 0; /* Proper margin for spacing */
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.categories {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.right-column {
+    flex: 2;
+}
+
+/* Carousel Container */
+.carousel-container {
+    display: none; /* Initially hide all carousels */
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    overflow: hidden; /* Hide overflowing images */
+    width: 100%;
+    height: 800px; /* Fixed height for the images */
+}
+
+.carousel-img {
+    width: 100%;
+    object-fit: contain; /* Ensures images maintain their aspect ratio */
+    height: 100%;
+    display: block;
+}
+
+/* Description below the carousel */
+.carousel-description {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-desc {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+/* Dots for Navigation */
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+    background-color: var(--accent-color);
+}
+
+.dot.active {
+    background-color: var(--accent-color); /* Active dot style */
+}
+
+
+/* Category Item Styling */
+.category-item {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.category-item:hover {
+    background-color: #f0f0f0;  /* Light gray background on hover */
+    color: var(--primary-color);  /* Change text color when hovered */
+}
+
+/* Active Category (when clicked) */
+.category-item.active {
+    background-color: var(--secondary-color);  /* Active background */
+    color: var(--primary-color);  /* Active text color */
+}
+
+/* Make sure the first category has an active class on load */
+#user-persona.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Challenges Section */
+.challenges-section {
+    background-color: var(--white); /* or any color you'd prefer */
+    padding: 40px var(--spacing);
+}
+
+.challenges-section .section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.challenges-section .section-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+/* Solution Section */
+.solution-section {
+    background-color: var(--light-gray); /* or any color you'd prefer */
+    padding: 40px var(--spacing);
+}
+
+.solution-section .section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.solution-section .section-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+/* Figma Embed Styling */
+.figma-embed-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.figma-embed-container iframe {
+    width: 100%;
+    height: 700px; /* Adjust the height as needed */
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.image-container h3{
+    font-size: 1.5rem;
+    margin: 30px;
+}
+
+.image-container-promotion h3{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.image-container-promotion-story h3{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.civica-video-container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.video-container {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+}
+
+.video-content {
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.view-style-guide-link {
+    text-decoration: none; 
+    color: var(--bg-color);
+}
+
+.view-style-guide-link:visited,
+.view-style-guide-link:active {
+    color: var(--bg-color); /* Keep the same color when visited or active */
+}
+
+video {
+    border-radius: 8px;
+}
+
+.video-content h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: var(--secondary-color);
+}
+
+.video-content h4 {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 100;
+}
+
+.video-content P {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+/* Carousel Shots */
+.carousel-shots {
+    width: 100%;  /* Make the carousel full width */
+    height: 500px;  /* Set the fixed height for the carousel */
+    display: flex;
+    justify-content: center;  /* Optionally centers the images horizontally */
+    align-items: center;  /* Optionally centers the images vertically */
+   
+  }
+  
+  /* Set carousel cell to fill the carousel */
+  .carousel-cell {
+    width: 100%;  /* Ensures full width of the container */
+    height: 100%;  /* Ensures full height of the container */
+    overflow: hidden;  /* Prevents image overflow */
+    padding: 0;  /* Remove any unwanted padding */
+    margin: 0; /* Hide any overflowing image parts */
+  }
+  
+  /* Ensure image fills the cell correctly */
+  .carousel-cell img {
+    width: 100%;  /* Make sure the image fills the width of the cell */
+    height: 100%;  /* Make sure the image fills the height of the cell */
+    object-fit: cover;  /* Ensure the image covers the cell without distortion */
+  }
+
+
+
+
+
+/* Adjust layout for smaller screens (iPhone 16 Pro Max) */
+@media (max-width: 500px) {
+
+    .video-content {
+        flex-direction: column;
+    }
+
+    .civica-section {
+        padding: 60px 10px;
+    }
+
+    .civica-container {
+        max-width: 100%;
+    }
+
+    /* Section Content - Stack vertically on mobile */
+    .section-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Left Column */
+    .left-column {
+        flex: 1;
+        order: 1; /* Left column comes first on mobile */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Right Column */
+    .right-column {
+        flex: 1;
+        order: 2; /* Right column comes after */
+    }
+
+    /* Banner Image on mobile */
+    .banner-image img {
+        max-height: 300px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    /* Timeline and Buttons layout stacked vertically on mobile */
+    .timeline-buttons {
+        flex-direction: column; /* Stack them vertically */
+    }
+
+    .timeline {
+        margin-bottom: 20px;
+    }
+
+    .timeline, .buttons {
+        width: 100%; /* Full width for mobile */
+    }
+
+    .btn {
+        font-size: 1rem; /* Adjust button font size */
+    }
+
+    .btn-icon {
+        font-size: 1.2rem; /* Adjust icon size for mobile */
+    }
+
+    /* Title and Description Styling Adjustments */
+    .title-description h1 {
+        font-size: 2rem; /* Smaller for mobile */
+    }
+
+    .title-description h2 {
+        font-size: 1.5rem; /* Smaller for mobile */
+    }
+
+    .description-text {
+        font-size: 1rem; /* Smaller for mobile */
+    }
+
+    .section-title::after {
+        width: 45%; /* Adjust underline width for mobile */
+    }
+
+    .app-features {
+        padding: 60px 10px; /* Adjust padding for mobile */
+    }
+
+    .app-features .section-title {
+        font-size: 1.8rem; /* Smaller for mobile */
+    }
+
+    .app-features-banner img {
+        width: 100%;
+        height: auto; /* Make sure image fits well on mobile */
+    }
+
+    .style-guide {
+        padding: 60px 10px;
+    }
+
+    .style-guide .section-title {
+        font-size: 1.8rem; /* Smaller title for mobile */
+    }
+
+    .style-guide-description {
+        font-size: 1rem; /* Smaller description text for mobile */
+    }
+
+    .view-style-guide {
+        font-size: 0.9rem; /* Adjust button size for mobile */
+    }
+
+    .style-guide-banner img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .civica-screen-logo .section-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .civica-screen-logo .left-column, .civica-screen-logo .right-column {
+        flex: 1;
+    }
+
+    .civica-screen-video img {
+        width: 100%;
+        height: auto;
+    }
+
+    .civica-description {
+        font-size: 1rem;
+    }
+
+    .try-app {
+        font-size: 1rem;
+    }
+
+    .try-app .btn-icon {
+        font-size: 1.2rem;
+    }
+
+    .ui-design {
+        padding: 40px 10px; /* Adjust padding for mobile */
+    }
+
+    .ui-design .section-title {
+        font-size: 1.8rem; /* Smaller title for mobile */
+    }
+
+    .ui-design-image {
+        width: 100%; /* Makes sure the images fit the screen width */
+        max-width: 100%;
+    }
+
+    .user-research-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    .carousel-desc {
+        font-size: 1rem;
+    }
+}
