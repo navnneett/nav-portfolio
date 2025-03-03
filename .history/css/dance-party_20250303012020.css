@@ -379,7 +379,11 @@
 }
 
 /* Character Carousel Cell */
-
+.carousel-cell img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
 /* Second Column: Character Images and Descriptions */
 .second-column {
