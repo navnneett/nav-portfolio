@@ -151,7 +151,7 @@
 .live-project {
     padding: 40px var(--spacing);
     margin-bottom: 30px;
-    background: linear-gradient(180deg, var(--secondary-color), var(--bg-color));
+    background: linear-gradient(180deg, var(--bg-color), var(--secondary-color));
 }
 
 .live-project-content {
