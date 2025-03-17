@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navneet Aulakh</title>
+    <link rel="icon" href="/img/landing-page/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/index.html"><img src="../img/landing-page/logo.png" alt="Logo"></a>
+            </div>
+            <div class="hamburger" id="hamburger">&#9776;</div> <!-- Hamburger icon -->
+            <ul class="nav-links">
+                <div class="home-link">
+                    <a href="/index.html"><img src="../img/landing-page/logo-small-screen.svg" alt="Logo"></a>
+                </div>
+                <li><a href="#featured-projects">Projects</a></li>
+                <li><a href="/html/about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="landing-container">
+            <div class="landing-content">
+                <div class="landing-text">
+                    <img id="logo-name-img" src="../img/landing-page/logo-name.png" alt="Name">
+                    <h1>Graphic and UI/UX Designer | Illustrator</h1>
+                    <h2>[This site is under development and being updated. Please view the featured projects below.]</h2>
+                </div>
+                <div class="landing-animation">
+                    <img id="bunny-img" src="../img/landing-page/bunny.png" alt="Bunny Animation">
+                    <button id="magic-button" onclick="triggerMagic()">Click for Magic</button>
+                    <h2 class="landing-animation-text">[Animation is under development]</h2>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="featured-projects" id="featured-projects">
+            <h2>FEATURED PROJECTS</h2>
+            <div class="projects-container">
+                <div class="project-card" onclick="window.location.href='../html/civica.html'">
+                    <div class="card-content">
+                        <img src="../img/civica/civica-banner.png" alt="Civica Banner" class="project-banner">
+                        <h3 class="class-title">Civica</h3>
+                        <p class="subtitle">Legal Assistance App</p>
+                        <p class="featured-description">A detailed description of the Civica app and its features.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="window.location.href='../html/dance-party.html'">
+                    <div class="card-content">
+                        <img src="../img/dance-party/dance-party-landing.jpg" alt="Dance Party Banner" class="project-banner">
+                        <h3>Dance Party!</h3>
+                        <p class="subtitle">Interactive E-book</p>
+                        <p class="featured-description">A fun interactive e-book for children featuring a squirrel in a dance party.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="window.location.href='/html/clotho.html'">
+                    <div class="card-content">
+                        <img src="../img/clotho/clotho-banner.png" alt="Clotho Banner" class="project-banner">
+                        <h3>Clotho</h3>
+                        <p class="subtitle">Wardrobe Organization App</p>
+                        <p class="featured-description">Clotho is a clothing management app designed to address common wardrobe challenges.</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="window.location.href='/html/soleo.html'">
+                    <div class="card-content">
+                        <img src="../img/soleo/soleo-banner.jpg" alt="Soleo Banner" class="project-banner">
+                        <h3>Soleo</h3>
+                        <p class="subtitle">Beverage Can Design</p>
+                        <p class="featured-description">Soleo is a beverage can design project focused on refreshing iced tea branding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+                        
+        <section class="all-projects">
+            <h2>PROJECTS</h2>
+            <div class="projects-wrapper">
+                <!-- Categories Column -->
+                <div class="categories">
+                    <ul>
+                        <li onclick="filterProjects('All')" class="active">All Projects</li>
+                        <li onclick="filterProjects('UI/UX and Frontend')">UI/UX and Frontend</li>
+                        <li onclick="filterProjects('Motion Graphics')">Motion Graphics</li>
+                        <li onclick="filterProjects('Graphic Design')">Graphic Design</li>
+                        <li onclick="filterProjects('Illustrations')">Illustrations</li>
+                    </ul>
+                </div>
+                
+                <!-- Projects Column -->
+                <div class="all-projects-list">
+                    <div class="all-project-card" data-category="UI/UX and Frontend" onclick="window.location.href='/html/petalbud.html'">
+                        <div class="all-card-content">
+                            <img src="../img/petalbud/petalbud-banner.png" alt="Petalbud Banner" class="all-project-banner">
+                        </div>
+                        <div class="project-details">
+                            <h3>Petalbud</h3>
+                            <p class="all-projects-subtitle">Web App</p>
+                            <p class="all-projects-description">Petalbud is an interactive web project that uses the bit masking principle to dynamically reveal forest spirits based on user input. Built with React and Next.js, the app showcases how bitmasking can control which characters appear, creating a visually engaging experience.</p>
+                        </div>
+                    </div>
+
+    
+                    
+                    <div class="all-project-card" data-category="Motion Graphics">
+                        <div class="all-card-content" onclick="window.location.href='/html/bunny-dance-reel.html'">
+                            <img src="../img/bunny-dance-reel/dance-reel-banner.png" alt="Bunny Dance Reel" class="all-project-banner-dance-reel">
+                        </div>
+                        <div class="project-details" onclick="window.location.href='/html/bunny-dance-reel.html'">
+                            <h3>Bunny Dance Reel</h3>
+                            <p class="all-projects-subtitle">Motion Graphics</p>
+                            <p class="all-projects-description">The "Bunny Dance Reel" is an After Effects animation featuring four bunnies dancing in sync, with the grand finale showing them in puffer jackets and sunglasses under a disco ball. The animation combines smooth character movement, vibrant colors, and fun effects to create an engaging and lively visual experience.</p>
+                        </div>
+                    </div>
+                    <div class="all-project-card" data-category="Graphic Design">
+                        <div class="all-card-content">
+                            <img src="../img/landing-page/coming-soon.png" alt="Project C" class="all-project-banner">
+                        </div>
+                        <div class="project-details">
+                            <h3>Project C</h3>
+                            <p class="all-projects-subtitle">Graphic Design</p>
+                            <p class="all-projects-description">Project C is a comprehensive graphic design portfolio featuring various branding projects.</p>
+                        </div>
+                    </div>
+                    <div class="all-project-card" data-category="Illustrations">
+                        <div class="all-card-content">
+                            <img src="../img/landing-page/coming-soon.png" alt="Project D" class="all-project-banner">
+                        </div>
+                        <div class="project-details">
+                            <h3>Project D</h3>
+                            <p class="all-projects-subtitle">Illustrations</p>
+                            <p class="all-projects-description">An illustration-focused project showcasing hand-drawn and digital artworks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-content" id="contact">
+            <!-- First column with title and description -->
+            <div class="footer-column-left">
+                <h2>Crafting digital experiences that tell your story.</h2>
+                <p>Let’s collaborate to create something special together!</p>
+            </div>
+            
+            <!-- Second column with icons and copyright -->
+            <div class="footer-column-right">
+                <div class="footer-icons">
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/navneet-aulakh-a33484291/" target="_blank" class="footer-icon" id="linkedin-icon">
+                        <img src="../img/landing-page/linkedin-logo.svg" alt="LinkedIn" class="footer-icon-img">
+                    </a>
+                    <!-- GitHub Icon -->
+                    <a href="https://github.com/navnneett" target="_blank" class="footer-icon" id="github-icon">
+                        <img src="../img/landing-page/github-logo.svg" alt="GitHub" class="footer-icon-img">
+                    </a>
+                    <!-- Email Icon with Copy Functionality -->
+                    <a href="javascript:void(0);" class="footer-icon" id="email-icon" onclick="copyEmail()">
+                        <img src="../img/landing-page/email-logo.svg" alt="Email" class="footer-icon-img">
+                    </a>
+                </div>
+                <h3>&copy; Navneet Aulakh | PORTFOLIO 2025</h3>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
