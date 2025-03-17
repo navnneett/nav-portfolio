@@ -71,11 +71,6 @@
     border-radius: 12px;
 }
 
-.timeline h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
 /* Buttons Section */
 .buttons {
     width: 48%;
@@ -270,7 +265,6 @@
     margin-bottom: 10px;
     font-weight: 100;
     color: var(--secondary-color);
-    text-align: left;
 }
 
 .sketch-image {
@@ -286,7 +280,6 @@
     margin-bottom: 10px;
     font-weight: 100;
     color: var(--secondary-color);
-    text-align: left;
 }
 
 .color-palette-image {
