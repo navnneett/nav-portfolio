@@ -1,0 +1,307 @@
+/* Section: Petalbud Webapp */
+.petalbud-section {
+    background-color: var(--bg-color);
+    padding: 40px var(--spacing);
+}
+
+.petalbud-container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* Section Content - Flex Layout */
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left Column */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title-description h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.title-description h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.description-text {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* Right Column */
+.right-column {
+    flex: 2; /* Takes less space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Banner Image */
+.can-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Timeline and Buttons Layout Side by Side */
+.timeline-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Timeline Section */
+.timeline {
+    width: 48%;
+    background-color: var(--accent-color);
+    padding: var(--spacing);
+    border-radius: 12px;
+}
+
+/* Buttons Section */
+.buttons {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Buttons Styling */
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+.btn-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* Section 2: Design Rationale */
+.design-rationale {
+    background-color: var(--white);
+    padding: 40px var(--spacing);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Fade-in Effect */
+#design-rationale.visible {
+    opacity: 1;
+}
+
+/* Section Title and Text Styling */
+.section-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+    text-align: left;
+    margin-top: 20px;
+    max-width: 1200px;
+}
+
+/* Section Title Styles with Underline */
+.section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Underline styling */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin-top: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*Live Project*/
+.live-project {
+    background-color: var(--bg-color);
+    padding: 40px var(--spacing);
+}
+/* How It Works Section */
+.how-it-works {
+    padding: 40px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.how-it-works-title {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.step-box {
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-box h4 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.step-box p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.step-box pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    color: #333;
+    overflow-x: auto;
+}
+
+.step-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Adjust layout for smaller screens (iPhone 16 Pro Max) */
+@media (max-width: 500px) {
+    .petalbud-section {
+        padding: 60px 10px; /* Adjust padding for mobile */
+    }
+
+    .petalbud-container {
+        max-width: 100%;
+    }
+
+    /* Section Content - Stack vertically on mobile */
+    .section-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Left Column */
+    .left-column {
+        flex: 1;
+        order: 1; /* Ensures the left column comes first */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Right Column */
+    .right-column {
+        flex: 1;
+        order: 2; /* Ensures the right column comes after */
+    }
+
+    /* Banner Image on smaller screens */
+    .can-image img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    /* Timeline and Buttons layout stacked vertically */
+    .timeline-buttons {
+        flex-direction: column;
+    }
+
+    .timeline {
+        margin-bottom: 25px;
+    }
+
+    .timeline, .buttons {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    /* Buttons Adjustments */
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .btn-icon {
+        font-size: 1.2rem; /* Adjust icon size for mobile */
+    }
+
+    /* Title and Description Styling Adjustments */
+    .title-description h1 {
+        font-size: 2rem; /* Smaller for mobile */
+    }
+
+    .title-description h2 {
+        font-size: 1.5rem; /* Smaller for mobile */
+    }
+
+    .description-text {
+        font-size: 1rem; /* Smaller for mobile */
+    }
+
+    .section-title::after {
+        width: 45%; /* Adjust underline width for mobile */
+    }
+
+    .how-it-works-title {
+        font-size: 2rem;
+    }
+
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    .step-box h4 {
+        font-size: 1.3rem;
+    }
+
+    .step-box p {
+        font-size: 0.9rem;
+    }
+
+    .step-box pre {
+        font-size: 0.9rem;
+    }
+}
