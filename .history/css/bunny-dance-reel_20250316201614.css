@@ -151,7 +151,10 @@
 .live-project {
     padding: 40px var(--spacing);
     margin-bottom: 30px;
-    background: linear-gradient(180deg, var(--secondary-color), var(--bg-color));
+    background: linear-gradient(145deg, var(--accent-color), var(--secondary-color));
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .live-project-content {
@@ -166,51 +169,23 @@
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
-    align-items: right;
-}
-
-/* YouTube Video */
-.video-container {
-    margin-top: 40px;
 }
 
 .painting-video {
-    width: 60%;
-    margin-left: 60px;
-    margin-top: 40px;
-    height: 650px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
-
 /* Text Column */
-/* Highlighted Text */
-.highlight-text {
-    font-size: 2rem;  /* Larger font size */
-    font-weight: 700;  /* Bold text */
-    color: #ff66cc; /* Bright, attention-grabbing color */
-    text-transform: uppercase; /* Makes it all caps */
-    letter-spacing: 2px; /* Adds spacing between letters */
-    background: linear-gradient(45deg, #ff66cc, #f8dd6e); /* Gradient background */
-    -webkit-background-clip: text; /* Clips background to the text */
-    color: transparent; /* Makes text color transparent to show gradient */
-    font-family: 'Arial', sans-serif; /* Fun, playful font */
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for pop */
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-.highlight-text:hover {
-    transform: scale(1.1); /* Slightly enlarges the text on hover */
-    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
-}
 .text-column {
-    flex: 1;
+    flex: 2;
     text-align: center;
     color: white;
 }
 
 .fun-text {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 20px;
     color: white;
@@ -224,8 +199,8 @@
     margin-top: 20px;
 }
 
-.bunny-dance-logo-img {
-    max-width: 100%;
+.logo-img {
+    max-width: 200px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -283,6 +258,7 @@
 
 /* Design Concept Section */
 .design-concept {
+    background-color: var(--bg-color);
     padding: 40px var(--spacing);
     margin-bottom: 30px;
 }
@@ -297,8 +273,34 @@
     height: auto;
 }
 
+/* Painting Process Description */
+.painting-process {
+    margin: 20px 0;
+}
 
+.painting-process h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: var(--secondary-color);
+}
 
+.painting-process p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+/* YouTube Video */
+.video-container {
+    margin-top: 20px;
+}
+
+.painting-video {
+    width: 60%;
+    height: 650px;
+    border-radius: 10px;
+}
 
 /* Adjust layout for smaller screens (iPhone 16 Pro Max) */
 @media (max-width: 500px) {
@@ -379,11 +381,16 @@
         padding: 12px 24px;
     }
 
+    .painting-process h3 {
+        font-size: 1.6rem;
+    }
+
+    .painting-process p {
+        font-size: 1rem;
+    }
+
     .painting-video {
-        width: 80%;
-        height: 500px;
-        margin-left: 40px;
-        margin-top: 30px;
+        height: 300px;
     }
 
     .live-project-content {
@@ -395,8 +402,10 @@
     }
 
     .fun-text {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
-    
+    .logo-img {
+        max-width: 150px;
+    }
 }

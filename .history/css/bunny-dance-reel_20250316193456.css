@@ -147,91 +147,10 @@
     bottom: 0;
 }
 
-/* Live Project Section */
+/* Live Project */
 .live-project {
     padding: 40px var(--spacing);
     margin-bottom: 30px;
-    background: linear-gradient(180deg, var(--secondary-color), var(--bg-color));
-}
-
-.live-project-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
-}
-
-/* Video Column */
-.video-column {
-    flex: 1;
-    border-radius: 10px;
-    overflow: hidden;
-    align-items: right;
-}
-
-/* YouTube Video */
-.video-container {
-    margin-top: 40px;
-}
-
-.painting-video {
-    width: 60%;
-    margin-left: 60px;
-    margin-top: 40px;
-    height: 650px;
-    border-radius: 10px;
-}
-
-
-/* Text Column */
-/* Highlighted Text */
-.highlight-text {
-    font-size: 2rem;  /* Larger font size */
-    font-weight: 700;  /* Bold text */
-    color: #ff66cc; /* Bright, attention-grabbing color */
-    text-transform: uppercase; /* Makes it all caps */
-    letter-spacing: 2px; /* Adds spacing between letters */
-    background: linear-gradient(45deg, #ff66cc, #f8dd6e); /* Gradient background */
-    -webkit-background-clip: text; /* Clips background to the text */
-    color: transparent; /* Makes text color transparent to show gradient */
-    font-family: 'Arial', sans-serif; /* Fun, playful font */
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for pop */
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-.highlight-text:hover {
-    transform: scale(1.1); /* Slightly enlarges the text on hover */
-    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
-}
-.text-column {
-    flex: 1;
-    text-align: center;
-    color: white;
-}
-
-.fun-text {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.bunny-dance-logo-img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.logo-img:hover {
-    transform: scale(1.1);
 }
 
 /* Style for the Live Project invitation - Enhanced */
@@ -283,6 +202,7 @@
 
 /* Design Concept Section */
 .design-concept {
+    background-color: var(--bg-color);
     padding: 40px var(--spacing);
     margin-bottom: 30px;
 }
@@ -297,8 +217,34 @@
     height: auto;
 }
 
+/* Painting Process Description */
+.painting-process {
+    margin: 20px 0;
+}
 
+.painting-process h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: var(--secondary-color);
+}
 
+.painting-process p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+/* YouTube Video */
+.video-container {
+    margin-top: 20px;
+}
+
+.painting-video {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
 
 /* Adjust layout for smaller screens (iPhone 16 Pro Max) */
 @media (max-width: 500px) {
@@ -379,24 +325,15 @@
         padding: 12px 24px;
     }
 
+    .painting-process h3 {
+        font-size: 1.6rem;
+    }
+
+    .painting-process p {
+        font-size: 1rem;
+    }
+
     .painting-video {
-        width: 80%;
-        height: 500px;
-        margin-left: 40px;
-        margin-top: 30px;
+        height: 300px;
     }
-
-    .live-project-content {
-        flex-direction: column;
-    }
-
-    .video-column {
-        margin-bottom: 20px;
-    }
-
-    .fun-text {
-        font-size: 1.3rem;
-    }
-
-    
 }

@@ -112,7 +112,7 @@
             <div class="petalbud-container">
                 <!-- Section Title with Underline -->
                 <h2 class="section-title">
-                    DESIGN<span class="underline-target"> CONCEPT</span>
+                    Design<span class="underline-target"> Concept</span>
                 </h2>
 
                 <!-- Style Guide Image -->
@@ -135,69 +135,7 @@
         </section>
 
 
-        <section class="project-logic">
-            <div class="petalbud-container">
-                <!-- How It Works Steps -->
-                <h2 class="section-title">
-                    PROJECT<span class="underline-target"> LOGIC</span>
-                </h2>
-        <div class="how-it-works">
-            <div class="steps-container">
-                <div class="step-box">
-                    <h4>1. Initialize Data</h4>
-                    <p>Define spirit classes and their images, positions, and sizes in JavaScript objects. Each class has a bit value that corresponds to a spirit class (e.g., Dewdrop = 1, Tulip = 2).</p>
-                    <pre><code>
-const classImages = { 1: { src: '/images/1.gif', width: 250, height: 250 }, ... };
-const classFilters = { 1: 'Dewdrop', 2: 'Tulip', ... };
-                    </code></pre>
-                </div>
-                <div class="step-box">
-                    <h4>2. Capture User Input</h4>
-                    <p>The user enters a number in the input field, which is then stored as the `input` state. This number will control which spirits appear based on their corresponding bit values.</p>
-                    <pre><code>
-const [input, setInput] = useState(""); 
-<input id="input" type="text" placeholder="Enter number" oninput="handleInput(event)" />
-                    </code></pre>
-                </div>
-                <div class="step-box">
-                    <h4>3. Bitmasking</h4>
-                    <p>The input is processed using bitwise operations. This helps determine which spirit images should be displayed based on which bits are set in the input.</p>
-                    <pre><code>
-const selectedImageKeys = Object.keys(classFilters).filter(key => (input & parseInt(key)) > 0);
-                    </code></pre>
-                </div>
-                <div class="step-box">
-                    <h4>4. Render Images</h4>
-                    <p>For each matching bit, corresponding images are dynamically displayed. The images are positioned based on the data stored in `classImages`.</p>
-                    <pre><code>
-return selectedImageKeys.map(key => {
-    const selectedImage = classImages[key];
-    return (<Image src={selectedImage.src} width={selectedImage.width} height={selectedImage.height} />);
-});
-                    </code></pre>
-                </div>
-                <div class="step-box">
-                    <h4>5. Display Spirit Information</h4>
-                    <p>A table is shown that links each bit value to a spirit class name (e.g., 1 = Dewdrop). This helps users understand which input reveals which spirits.</p>
-                    <pre><code>
-{Object.keys(classFilters).map(item => (
-    <tr key={item}><td>{item}</td><td>{classFilters[item]}</td></tr>
-))}
-                    </code></pre>
-                </div>
-                <div class="step-box">
-                    <h4>6. Styling and Responsiveness</h4>
-                    <p>CSS is used to style the images, and make the user interface visually appealing with features like hover effects and flexbox for layout.</p>
-                    <pre><code>
-.steps-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-.step-box:hover { transform: translateY(-10px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); }
-                    </code></pre>
-                </div>
-            </div>
-        </div>
-            </div>
-        </section>
-
+       
 
         
         

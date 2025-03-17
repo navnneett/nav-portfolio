@@ -151,7 +151,7 @@
 .live-project {
     padding: 40px var(--spacing);
     margin-bottom: 30px;
-    background: linear-gradient(180deg, var(--secondary-color), var(--bg-color));
+    background: linear-gradient(180deg, var(--bg-color), var(--secondary-color));
 }
 
 .live-project-content {
@@ -195,7 +195,7 @@
     -webkit-background-clip: text; /* Clips background to the text */
     color: transparent; /* Makes text color transparent to show gradient */
     font-family: 'Arial', sans-serif; /* Fun, playful font */
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for pop */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6); /* Subtle shadow for pop */
     transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
