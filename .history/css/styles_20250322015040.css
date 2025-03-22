@@ -156,7 +156,7 @@ nav {
 
 /* Magic button styles */
 .landing-animation button {
-  position: absolute; /* Fixed positioning */
+  position: fixed; /* Fixed positioning */
   top: 90%; /* Position vertically at the bottom */
   left: 50%; /* Position horizontally at the center */
   transform: translate(-50%, -50%); /* Exact centering */
@@ -171,7 +171,7 @@ nav {
   transition: all 0.3s ease; /* Smooth transition for all properties */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding a shadow for depth */
   overflow: hidden;
-  position: absolute;
+  position: relative;
 }
 
 /* When hovered, button changes color and grows */

@@ -171,7 +171,7 @@ nav {
   transition: all 0.3s ease; /* Smooth transition for all properties */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding a shadow for depth */
   overflow: hidden;
-  position: absolute;
+  position: relative;
 }
 
 /* When hovered, button changes color and grows */
@@ -202,7 +202,7 @@ nav {
 /* Adding a subtle border animation when hovered */
 .landing-animation button:before {
   content: "";
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
