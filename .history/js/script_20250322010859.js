@@ -158,6 +158,26 @@ function triggerMagic() {
     }
 }
 
+function triggerMagic() {
+    const bunnyImg = document.getElementById('bunny-img');
+    const magicButton = document.getElementById('magic-button');
+
+    if (bunnyImg && magicButton) {
+        // Change bunny image to magic gif
+        bunnyImg.src = '/img/landing-page/magic.gif'; 
+
+        // Hide the button after the first click
+        magicButton.style.display = 'none';
+
+        // After 7 seconds, revert back to bunny and show the button again
+        setTimeout(function() {
+            bunnyImg.src = '/img/landing-page/bunny.png'; // Revert to the bunny image
+            magicButton.style.display = 'block'; // Show the button again
+        }, 7000); // 7 seconds delay
+    } else {
+        console.log("Bunny image or magic button not found.");
+    }
+}
 
 
 //Email

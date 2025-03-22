@@ -405,7 +405,7 @@ footer h3 {
   left: 0;
   right: 0;
   height: 60%; /* Adjust to control the height of the gradient */
-  background: linear-gradient(to bottom, var(--primary-color) 40%, rgba(255, 255, 255, 0) 90%); /* Gradient from primary color to transparent */
+  background: linear-gradient(to bottom, var(--primary-color) 20%, rgba(255, 255, 255, 0) 90%); /* Gradient from primary color to transparent */
   border-radius: 8px;
   opacity: 0.6; /* Set opacity of the gradient */
   pointer-events: none; /* Prevent the overlay from interfering with any interactions */
@@ -447,27 +447,24 @@ footer h3 {
   z-index: 2;
   margin: 0;
   text-align: left;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding text shadow for depth */
 }
 
 .subtitle {
   position: absolute;
   top: 50px;
   left: 15px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   z-index: 2;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adding text shadow for depth */
 }
 
 .subtitle-long {
   position: absolute;
-  top: 100px;
+  top: 95px;
   left: 15px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   z-index: 2;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adding text shadow for depth */
 }
 
 .featured-description {
@@ -785,16 +782,11 @@ footer h3 {
   }
 
   .subtitle {
-    font-size: 1.2rem;
-  }
-
-  .subtitle-long {
-    top: 50px;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .featured-description {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .projects-wrapper {

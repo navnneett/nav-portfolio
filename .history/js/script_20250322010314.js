@@ -158,8 +158,6 @@ function triggerMagic() {
     }
 }
 
-
-
 //Email
 function copyEmail() {
     const email = "navneet-aulakh@outlook.com"; // Replace with your actual email address

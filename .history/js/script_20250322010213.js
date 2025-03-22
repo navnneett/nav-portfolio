@@ -148,16 +148,19 @@ function triggerMagic() {
         // Hide the button after the first click
         magicButton.style.display = 'none';
 
+        // Add the 'clicked' class to prevent scaling after the first click
+        magicButton.classList.add('clicked');
+
         // After 7 seconds, revert back to bunny and show the button again
         setTimeout(function() {
             bunnyImg.src = '/img/landing-page/bunny.png'; // Revert to the bunny image
             magicButton.style.display = 'block'; // Show the button again
+            magicButton.classList.remove('clicked'); // Remove 'clicked' class to allow hover effect again
         }, 7000); // 7 seconds delay
     } else {
         console.log("Bunny image or magic button not found.");
     }
 }
-
 
 
 //Email

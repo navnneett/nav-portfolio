@@ -454,7 +454,7 @@ footer h3 {
   position: absolute;
   top: 50px;
   left: 15px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   z-index: 2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adding text shadow for depth */
@@ -464,7 +464,7 @@ footer h3 {
   position: absolute;
   top: 100px;
   left: 15px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   z-index: 2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adding text shadow for depth */
@@ -785,16 +785,11 @@ footer h3 {
   }
 
   .subtitle {
-    font-size: 1.2rem;
-  }
-
-  .subtitle-long {
-    top: 50px;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .featured-description {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .projects-wrapper {
