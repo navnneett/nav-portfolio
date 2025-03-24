@@ -1,0 +1,670 @@
+
+.dance-party-section {
+    background-color: var(--bg-color);
+    padding: 40px var(--spacing);
+}
+
+.dance-party-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Section Content - Flex Layout */
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left Column */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title-description h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.title-description h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.description-text {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* Right Column */
+.right-column {
+    flex: 2; /* Takes less space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Banner Image */
+.can-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Timeline and Buttons Layout Side by Side */
+.timeline-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Timeline Section */
+.timeline {
+    width: 48%;
+    background-color: var(--accent-color);
+    padding: var(--spacing);
+    border-radius: 12px;
+}
+
+.timeline h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+
+.timeline p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* Buttons Section */
+.buttons {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Buttons Styling */
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;  /* Adjusted padding for a bigger button */
+    border: none;
+    border-radius: 50px;  /* More rounded corners for a softer look */
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Smooth transition for all properties */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Bigger shadow for depth */
+    position: relative;
+}
+
+/* Hover Effects */
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.05);  /* Slightly grows the button on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Stronger shadow */
+}
+
+/* Button Icon */
+.btn-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* Section 2: Design Rationale */
+.design-rationale {
+    background-color: var(--white);
+    padding: 40px var(--spacing);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Fade-in Effect */
+#design-rationale.visible {
+    opacity: 1;
+}
+
+/* Section Title and Text Styling */
+.section-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+    text-align: left;
+    margin-top: 20px;
+    max-width: 1200px;
+}
+
+/* Section Title Styles with Underline */
+.section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Underline styling */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin-top: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Figma Embed Styling */
+.figma {
+    padding: 40px var(--spacing);
+}
+
+.figma-embed-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.figma-embed-container iframe {
+    width: 100%;
+    height: 700px; /* Adjust the height as needed */
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Fullscreen Image Overlay */
+.storyboard {
+    background-color: var(--bg-color);
+
+}
+
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Fullscreen Image Overlay */
+.storyboard {
+    padding: 40px var(--spacing);
+}
+
+.storyboard h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.storyboard p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.fullscreen-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zooming and shadow */
+    position: absolute;  /* Allow dragging */
+    cursor: grab; /* Indicate it's draggable when not dragging */
+}
+
+/* Indicate the image is being dragged */
+.fullscreen-overlay img:active {
+    cursor: grabbing; /* Indicate it's being dragged */
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.zoom-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+}
+
+.zoom-buttons button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.zoom-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.storyboard-img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Hover effect for zoom (without clicking) */
+.storyboard-img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 0 10px rgba(70, 67, 67, 0.6); /* Subtle glow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.storyboard h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: var(--secondary-color);
+}
+
+.layout-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.layout-columns {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+.left-layout-column {
+    width: 50%; /* Adjust width as needed */
+}
+
+.right-layout-column {
+    width: 50%; /* Adjust width as needed */
+}
+
+.right-layout-column h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 100;
+}
+
+.layout-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the sketch */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow */
+}
+
+/* Carousel Shots */
+.carousel {
+    display: block; 
+    width: 100%;  /* Make the carousel full width */
+    height: 500px;  /* Set the fixed height for the carousel */
+    justify-content: center;  /* Optionally centers the images horizontally */
+    align-items: center;  /* Optionally centers the images vertically */
+    position: relative;  /* For proper alignment inside the container */
+}
+
+/* Set carousel cell to fill the carousel */
+.carousel-cell {
+    width: 100%;  /* Ensures full width of the container */
+    height: 100%;  /* Ensures full height of the container */
+    overflow: hidden;  /* Prevents image overflow */
+    position: relative;  /* Ensures the image can fit within its cell */
+}
+
+
+/* Ensure image fits the cell properly */
+.carousel-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire cell without distortion */
+    object-position: center; /* Centers the image */
+}
+
+
+/* Concept Sketches Carousel*/
+.concept-sketches {
+    padding: 60px var(--spacing);
+}
+
+.concept-sketches .section-title {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.carousel {
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden; /* Ensure only one image is visible at a time */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    background-color: rgba(15, 66, 101, 0.5);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%; /* Make the buttons circular */
+    font-size: 2rem;
+    transform: translateY(-50%);
+    width: 50px; /* Set a fixed width for the circular buttons */
+    height: 50px; /* Set a fixed height for the circular buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    background-color: rgba(15, 66, 101, 0.5);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%; /* Make the buttons circular */
+    font-size: 2rem;
+    transform: translateY(-50%);
+    width: 50px; /* Set a fixed width for the circular buttons */
+    height: 50px; /* Set a fixed height for the circular buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+    right: 20px;
+}
+
+/* Dots for Navigation */
+.dots-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: var(--accent-color);
+}
+
+.active-carousel {
+    background-color: var(--accent-color); /* Active dot styling */
+}
+
+
+
+
+/* Character DEsign */
+/* Title Styling */
+.character-design-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Section Content - Flex Layout */
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* First Column: Flickity Carousel */
+.first-column {
+    flex: 1;
+    width: 50%; /* Make the carousel take half the space */
+}
+
+/* Character Carousel Cell */
+
+
+/* Second Column: Character Images and Descriptions */
+.second-column {
+    flex: 1;
+    width: 50%; /* Make the character descriptions take half the space */
+}
+
+/* Character image and description */
+.character {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.character img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.character p {
+    font-size: 1.2rem;
+}
+
+
+/* Responsive Media Queries */
+@media (max-width: 500px) {
+    .dance-party-section {
+        padding: 40px 10px;
+    }
+
+    .dance-party-container {
+        max-width: 100%;
+    }
+
+    /* Section Content - Stack vertically on mobile */
+    .section-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Left Column */
+    .left-column {
+        flex: 1;
+        order: 1; /* Left column comes first on mobile */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Right Column */
+    .right-column {
+        flex: 1;
+        order: 2; /* Right column comes after */
+    }
+
+    /* Banner Image on mobile */
+    .banner-image img {
+        max-height: 300px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    /* Timeline and Buttons layout stacked vertically */
+    .timeline-buttons {
+        flex-direction: column; /* Stack them vertically */
+    }
+
+    .timeline {
+        margin-bottom: 20px;
+    }
+
+    .timeline, .buttons {
+        width: 100%; /* Full width for mobile */
+    }
+
+    .btn {
+        font-size: 1rem; /* Adjust button font size */
+    }
+
+    .btn-icon {
+        font-size: 1.2rem; /* Adjust icon size for mobile */
+    }
+
+    /* Title and Description Styling Adjustments */
+    .title-description h1 {
+        font-size: 2rem; /* Smaller for mobile */
+    }
+
+    .title-description h2 {
+        font-size: 1.5rem; /* Smaller for mobile */
+    }
+
+    .description-text {
+        font-size: 1rem; /* Smaller for mobile */
+    }
+
+    .section-title::after {
+        width: 45%; /* Adjust underline width for mobile */
+    }
+
+    .figma {
+        padding: 40px 10px;
+    }
+
+    .storyboard {
+        padding: 40px 10px;
+    }
+
+    .storyboard h2 {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .storyboard h3 {
+        font-size: 1.3rem;
+    }
+
+    .section-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left-column, .right-column {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .can-image img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .title-description h1 {
+        font-size: 2rem;
+    }
+
+    .title-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .description-text {
+        font-size: 1rem;
+    }
+
+    .storyboard-img, .layout-img {
+        max-width: 100%;
+    }
+
+    .layout-columns {
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .layout-subtitle {
+        font-size: 1rem;
+    }
+
+    .right-layout-column {
+        width: 100%;
+    }
+
+    .left-layout-column {
+        width: 100%;
+    }
+
+
+}
