@@ -160,34 +160,35 @@ nav {
 
 /* Magic button styles */
 .landing-animation button {
+  border: 1px solid red;
   position: absolute; 
   top: 100%; 
   left: 50%; 
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   padding: 15px 30px;
   background-color: var(--primary-color);
   color: white;
-  border: none;
+  /* border: none; */
   border-radius: 30px;
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
-  transition: all 0.3s ease; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-  overflow: hidden;
+  /* transition: all 0.3s ease;  */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  */
+  /* overflow: hidden; */
   margin-top: 10px;
 }
 
 /* When hovered, button changes color and grows */
 .landing-animation button:hover {
   background-color: var(--secondary-color); 
-  transform: translate(-50%, -50%) scale(1.1); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+  /* transform: translate(-50%, -50%) scale(1.1);  */
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  */
 }
 
 /* Adding a glowing effect on hover */
 .landing-animation button:hover {
-  animation: glow 1s ease-out infinite;
+  /* animation: glow 1s ease-out infinite; */
 }
 
 /* Glowing effect animation */
@@ -216,6 +217,7 @@ nav {
   transform: scale(0);
   transition: all 0.3s ease;
   z-index: -1; 
+  pointer-events: none;
 }
 
 /* Border effect on hover */
@@ -225,7 +227,7 @@ nav {
 
 /* Additional style to make the button text stand out */
 .landing-animation button span {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);  */
 }
 
 /* SVG Image (Magic) Styling */
@@ -237,7 +239,7 @@ nav {
   visibility: hidden;
   transition: visibility 0.3s, opacity 0.3s, transform 0.3s ease; /* Added transform for size change */
   opacity: 0;
-  z-index: 2; 
+  /* z-index: 2;  */
   pointer-events: none;
 }
 
@@ -873,17 +875,6 @@ footer h3 {
   .all-projects-description {
     font-size: 0.9rem;
   }
-
-   /* SVG Image (Magic) Styling */
-.magic-svg {
-  top: 85%; 
-  left: 24%; 
-}
-
-.magic-svg {
-  width: 45%;
-  height: auto;
-}
 }
 
 
@@ -1122,16 +1113,5 @@ footer h3 {
   .landing-animation img {
     padding: 0;
   }
-
-  /* SVG Image (Magic) Styling */
-.magic-svg {
-  top: 85%; 
-  left: 18%; 
-}
-
-.magic-svg {
-  width: 55%;
-  height: auto;
-}
 }
 

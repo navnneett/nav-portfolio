@@ -163,7 +163,7 @@ nav {
   position: absolute; 
   top: 100%; 
   left: 50%; 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
   padding: 15px 30px;
   background-color: var(--primary-color);
   color: white;
@@ -187,7 +187,7 @@ nav {
 
 /* Adding a glowing effect on hover */
 .landing-animation button:hover {
-  animation: glow 1s ease-out infinite;
+  animation: glow 0.3s ease-out infinite;
 }
 
 /* Glowing effect animation */
@@ -238,7 +238,6 @@ nav {
   transition: visibility 0.3s, opacity 0.3s, transform 0.3s ease; /* Added transform for size change */
   opacity: 0;
   z-index: 2; 
-  pointer-events: none;
 }
 
 .magic-svg {
@@ -873,17 +872,6 @@ footer h3 {
   .all-projects-description {
     font-size: 0.9rem;
   }
-
-   /* SVG Image (Magic) Styling */
-.magic-svg {
-  top: 85%; 
-  left: 24%; 
-}
-
-.magic-svg {
-  width: 45%;
-  height: auto;
-}
 }
 
 
@@ -1122,16 +1110,5 @@ footer h3 {
   .landing-animation img {
     padding: 0;
   }
-
-  /* SVG Image (Magic) Styling */
-.magic-svg {
-  top: 85%; 
-  left: 18%; 
-}
-
-.magic-svg {
-  width: 55%;
-  height: auto;
-}
 }
 

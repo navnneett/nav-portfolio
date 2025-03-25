@@ -873,17 +873,6 @@ footer h3 {
   .all-projects-description {
     font-size: 0.9rem;
   }
-
-   /* SVG Image (Magic) Styling */
-.magic-svg {
-  top: 85%; 
-  left: 24%; 
-}
-
-.magic-svg {
-  width: 45%;
-  height: auto;
-}
 }
 
 

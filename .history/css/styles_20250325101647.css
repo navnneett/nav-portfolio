@@ -160,10 +160,10 @@ nav {
 
 /* Magic button styles */
 .landing-animation button {
-  position: absolute; 
-  top: 100%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
+  position: absolute; /* Fixed positioning */
+  top: 100%; /* Position vertically at the bottom */
+  left: 50%; /* Position horizontally at the center */
+  transform: translate(-50%, -50%); /* Exact centering */
   padding: 15px 30px;
   background-color: var(--primary-color);
   color: white;
@@ -172,17 +172,18 @@ nav {
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
-  transition: all 0.3s ease; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding a shadow for depth */
   overflow: hidden;
+  position: absolute;
   margin-top: 10px;
 }
 
 /* When hovered, button changes color and grows */
 .landing-animation button:hover {
-  background-color: var(--secondary-color); 
-  transform: translate(-50%, -50%) scale(1.1); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+  background-color: var(--secondary-color); /* Magical color change */
+  transform: translate(-50%, -50%) scale(1.1); /* Slight scaling effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
 /* Adding a glowing effect on hover */
@@ -215,7 +216,7 @@ nav {
   border-radius: 30px;
   transform: scale(0);
   transition: all 0.3s ease;
-  z-index: -1; 
+  z-index: -1; /* To keep it behind the button */
 }
 
 /* Border effect on hover */
@@ -225,32 +226,25 @@ nav {
 
 /* Additional style to make the button text stand out */
 .landing-animation button span {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
 }
 
 /* SVG Image (Magic) Styling */
 .magic-svg {
   position: absolute;
-  top: 85%; 
-  left: 20%; 
-  transform: translate(10%, 10%); 
-  visibility: hidden;
-  transition: visibility 0.3s, opacity 0.3s, transform 0.3s ease; /* Added transform for size change */
+  top: -50px; /* Adjust position */
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden; /* Hide by default */
+  transition: visibility 0.3s, opacity 0.3s; /* Smooth transition */
   opacity: 0;
-  z-index: 2; 
-  pointer-events: none;
-}
-
-.magic-svg {
-  width: 50%;
-  height: auto;
+  z-index: 10; /* Ensure it appears above the button */
 }
 
 /* Show the SVG when button is hovered */
 .landing-animation button:hover + .magic-svg {
   visibility: visible;
   opacity: 1;
-  transform: translate(10%, 10%) scale(1.1); /* Scale the SVG with the button */
 }
 
 
@@ -873,17 +867,6 @@ footer h3 {
   .all-projects-description {
     font-size: 0.9rem;
   }
-
-   /* SVG Image (Magic) Styling */
-.magic-svg {
-  top: 85%; 
-  left: 24%; 
-}
-
-.magic-svg {
-  width: 45%;
-  height: auto;
-}
 }
 
 
@@ -1122,16 +1105,5 @@ footer h3 {
   .landing-animation img {
     padding: 0;
   }
-
-  /* SVG Image (Magic) Styling */
-.magic-svg {
-  top: 85%; 
-  left: 18%; 
-}
-
-.magic-svg {
-  width: 55%;
-  height: auto;
-}
 }
 
