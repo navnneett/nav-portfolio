@@ -23,7 +23,7 @@
 
 /* Heading Style */
 .left-column h1 {
-    font-size: 3.6rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: transparent;
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--primary-color)); 
@@ -31,20 +31,20 @@
     background-clip: text; /* Non-webkit support */
     text-shadow: 3px 3px 5px rgba(11, 25, 66, 0.2); 
     margin-bottom: 20px;
-    margin-bottom: 40px;
-    text-align: center;
 }
+
+
 
 
 .image-container {
     display: flex;
-    justify-content: center; 
-    width: 100%; 
+    justify-content: center; /* Center the image horizontally */
+    width: 100%; /* Ensure the container takes the full width */
 }
 
 .image-container img {
     width: 85%;
-    max-width: 500px; 
+    max-width: 500px; /* Optionally set a max width for the image */
 }
 
 
@@ -53,6 +53,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.left-column h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 
@@ -69,18 +76,19 @@
 }
 
 .cta {
-    font-size: 1.2rem;
-    color: var(--primary-color);
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
     margin-bottom: 30px;
 }
 
 /* Buttons Styling */
 .buttons {
     display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center; 
-    gap: 20px; 
+    flex-direction: row; /* Arrange buttons in a column */
+    justify-content: center; /* Center the buttons vertically */
+    align-items: center; /* Center the buttons horizontally */
+    gap: 20px; /* Space between buttons */
     width: 100%;
 }
 
@@ -613,18 +621,13 @@ h3 {
     }
 
     /* Buttons Adjustments */
-
     .btn {
-        width: 100%; 
-        border-radius: 30px; 
-        font-size: 1rem; 
+        font-size: 0.8rem;
     }
 
-    .buttons {
-        display: flex;
-        flex-direction: column; /* Arrange buttons in a column */
+    .btn-icon {
+        font-size: 1.2rem; /* Adjust icon size for mobile */
     }
-
 
     /* Title and Description Styling Adjustments */
     .title-description h1 {

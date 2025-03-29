@@ -23,7 +23,7 @@
 
 /* Heading Style */
 .left-column h1 {
-    font-size: 3.6rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: transparent;
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--primary-color)); 
@@ -31,20 +31,20 @@
     background-clip: text; /* Non-webkit support */
     text-shadow: 3px 3px 5px rgba(11, 25, 66, 0.2); 
     margin-bottom: 20px;
-    margin-bottom: 40px;
-    text-align: center;
 }
+
+
 
 
 .image-container {
     display: flex;
-    justify-content: center; 
-    width: 100%; 
+    justify-content: center; /* Center the image horizontally */
+    width: 100%; /* Ensure the container takes the full width */
 }
 
 .image-container img {
     width: 85%;
-    max-width: 500px; 
+    max-width: 500px; /* Optionally set a max width for the image */
 }
 
 
@@ -53,6 +53,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.left-column h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 
@@ -69,20 +76,14 @@
 }
 
 .cta {
-    font-size: 1.2rem;
-    color: var(--primary-color);
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
     margin-bottom: 30px;
 }
 
 /* Buttons Styling */
-.buttons {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center; 
-    gap: 20px; 
-    width: 100%;
-}
+
 
 .btn {
     background-color: var(--primary-color);
@@ -94,6 +95,7 @@
     align-items: center;
     font-size: 1rem;
     font-weight: bold;
+    margin: 10px;
     cursor: pointer;
     transition: all 0.3s ease; 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
@@ -609,22 +611,17 @@ h3 {
     }
 
     .timeline, .buttons {
-        width: 100%; 
+        width: 100%; /* Full width for smaller screens */
     }
 
     /* Buttons Adjustments */
-
     .btn {
-        width: 100%; 
-        border-radius: 30px; 
-        font-size: 1rem; 
+        font-size: 0.8rem;
     }
 
-    .buttons {
-        display: flex;
-        flex-direction: column; /* Arrange buttons in a column */
+    .btn-icon {
+        font-size: 1.2rem; /* Adjust icon size for mobile */
     }
-
 
     /* Title and Description Styling Adjustments */
     .title-description h1 {
