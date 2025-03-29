@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="/img/landing-page/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Main Styles -->
+    <link rel="stylesheet" href="/css/about.css"> <!-- Soleo Section Styles -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/index.html"><img src="../img/landing-page/logo.png" alt="Logo"></a>
+            </div>
+            <div class="hamburger" id="hamburger">&#9776;</div> <!-- Hamburger icon -->
+            <ul class="nav-links">
+                <div class="home-link">
+                    <a href="/index.html"><img src="../img/landing-page/logo-small-screen.svg" alt="Logo"></a>
+                </div>
+                <li><a href="/index.html#featured-projects">Projects</a></li>
+                <li><a href="/html/about.html" class="active-about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <!-- Section 1: About Me -->
+            <section class="about-section">
+                <div class="about-container">
+                    <div class="section-content">
+                        <!-- Left Column: Image -->
+                        <div class="left-column">
+                            <h1>Bibbidi-Bobbidi...It’s Me!</h1>
+                            <div class="image-container">
+                                <img src="../img/about/face.png" alt="Face Image" class="face">
+                            </div>
+                        </div>
+            
+                        <!-- Right Column: Title, Description, Buttons -->
+                        <div class="right-column">
+                            <div class="title-description">
+                               <h2>I'm Navneet! A Graphic & UI/UX Designer, and Illustrator</h2>
+                                <p class="intro">With a lifelong love for storytelling through art, from sketching as a child to transitioning into digital arts after high school, I’ve always been captivated by the power of visual narratives. Inspired by the timeless magic of classic animations and Disney movies, I design experiences that blend creativity with functionality. Whether I’m designing user interfaces, designing and animating characters, or crafting brand identities, I pour my passion for storytelling into every project. I love exploring all sorts of artistic mediums and constantly learning new tools to push the limits of digital design.</p>
+                                <p class="details">I’m a detail-oriented and organized designer who thrives on keeping projects running smoothly. Whether it's structuring a seamless UI, organizing design systems, or managing front-end development, I ensure every part of the project flows like a well-told story. I'm always eager to learn new software, adapt to challenges, and bring fresh ideas to life. My mission is to craft intuitive, user-centred designs that deliver both function and flair, while always keeping the user experience front and centre.</p>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn"><i class="fas fa-gamepad"></i> Play to Get to Know Me</button>
+                                <button class="btn"><i class="fas fa-envelope"></i> Contact Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+        
+
+
+
+        <!-- Game Page -->
+                <!-- Start Page -->
+                <section class="game-landing-container">
+                    <div class="game-landing-content">
+                        <div class="game-landing-text">
+                            <img id="game-logo" src="../img/landing-page/game-logo.png" alt="Game Logo">
+                            <h2>Help bunny dress up for her royal ball, and uncover fun facts about me in each step!</h2>
+                            <button id="play-button" class="btn" onclick="startGame()">Play</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Game Section (Questions Pages) -->
+                <section class="game-section" id="game-section" style="display:none;">
+                    <div class="game-container">
+                        <div class="left-column">
+                            <img id="dress-image" src="../img/game/dress1.png" alt="Dress" class="game-image">
+                        </div>
+                        <div class="right-column">
+                            <!-- Question 1 -->
+                            <div id="question1">
+                                <h3>What's bunny's favorite color?</h3>
+                                <div class="options">
+                                    <button class="option" onclick="checkAnswer(1, 'pink')">Pink</button>
+                                    <button class="option" onclick="checkAnswer(1, 'blue')">Blue</button>
+                                    <button class="option" onclick="checkAnswer(1, 'green')">Green</button>
+                                    <button class="option" onclick="checkAnswer(1, 'yellow')">Yellow</button>
+                                </div>
+                                <p id="feedback1"></p>
+                                <button class="btn" id="next-button1" onclick="nextQuestion(1)">Next</button>
+                            </div>
+
+                            <!-- Question 2 -->
+                            <div id="question2" style="display:none;">
+                                <h3>What's bunny's favorite season?</h3>
+                                <div class="options">
+                                    <button class="option" onclick="checkAnswer(2, 'spring')">Spring</button>
+                                    <button class="option" onclick="checkAnswer(2, 'summer')">Summer</button>
+                                    <button class="option" onclick="checkAnswer(2, 'fall')">Fall</button>
+                                    <button class="option" onclick="checkAnswer(2, 'winter')">Winter</button>
+                                </div>
+                                <p id="feedback2"></p>
+                                <button class="btn" id="next-button2" onclick="nextQuestion(2)">Next</button>
+                            </div>
+
+                            <!-- Question 3 -->
+                            <div id="question3" style="display:none;">
+                                <h3>What animal does bunny adore?</h3>
+                                <div class="options">
+                                    <button class="option" onclick="checkAnswer(3, 'rabbit')">Rabbit</button>
+                                    <button class="option" onclick="checkAnswer(3, 'dog')">Dog</button>
+                                    <button class="option" onclick="checkAnswer(3, 'cat')">Cat</button>
+                                    <button class="option" onclick="checkAnswer(3, 'horse')">Horse</button>
+                                </div>
+                                <p id="feedback3"></p>
+                                <button class="btn" id="next-button3" onclick="nextQuestion(3)">Next</button>
+                            </div>
+
+                            <!-- Question 4 -->
+                            <div id="question4" style="display:none;">
+                                <h3>What's bunny's favorite food?</h3>
+                                <div class="options">
+                                    <button class="option" onclick="checkAnswer(4, 'carrot')">Carrot</button>
+                                    <button class="option" onclick="checkAnswer(4, 'lettuce')">Lettuce</button>
+                                    <button class="option" onclick="checkAnswer(4, 'banana')">Banana</button>
+                                    <button class="option" onclick="checkAnswer(4, 'apple')">Apple</button>
+                                </div>
+                                <p id="feedback4"></p>
+                                <button class="btn" id="next-button4" onclick="finishGame()">Finish</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- End Page (Success or Failure) -->
+                <section class="end-section" id="end-section" style="display:none;">
+                    <div class="end-content">
+                        <img id="end-image" src="../img/game/bunny-prince.png" alt="End Image">
+                        <h3 id="end-message">Congratulations! You got it right!</h3>
+                        <button class="btn" onclick="resetGame()">Play Again</button>
+                    </div>
+                </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content" id="contact">
+            <!-- First column with title and description -->
+            <div class="footer-column-left">
+                <h2>Crafting digital experiences that tell your story.</h2>
+                <p>Let’s collaborate to create something special together!</p>
+            </div>
+            
+            <!-- Second column with icons and copyright -->
+            <div class="footer-column-right">
+                <div class="footer-icons">
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/navneet-aulakh-a33484291/" target="_blank" class="footer-icon" id="linkedin-icon">
+                        <img src="../img/landing-page/linkedin-logo.svg" alt="LinkedIn" class="footer-icon-img">
+                    </a>
+                    <!-- GitHub Icon -->
+                    <a href="https://github.com/navnneett" target="_blank" class="footer-icon" id="github-icon">
+                        <img src="../img/landing-page/github-logo.svg" alt="GitHub" class="footer-icon-img">
+                    </a>
+                    <!-- Email Icon with Copy Functionality -->
+                    <a href="javascript:void(0);" class="footer-icon" id="email-icon" onclick="copyEmail()">
+                        <img src="../img/landing-page/email-logo.svg" alt="Email" class="footer-icon-img">
+                    </a>
+                </div>
+                <h3>&copy; Navneet Aulakh | PORTFOLIO 2025</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/about.js"></script>
+</body>
+</html>

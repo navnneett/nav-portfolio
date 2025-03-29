@@ -1,0 +1,680 @@
+  
+.about-section {
+    background-color: var(--bg-color);
+    padding: 40px var(--spacing);
+}
+
+.about-container {
+    max-width: 1250px;
+    margin: auto;
+}
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Left Column */
+.left-column {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(145deg, rgba(255, 153, 204, 0.8), rgba(255, 204, 255, 0.8)); /* Soft pink gradient */
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Heading Style */
+.left-column h1 {
+    font-size: 3rem; 
+    font-weight: 700;
+    color: transparent;
+    background: linear-gradient(to right, #ff66cc, #ffcc99); /* Gradient for the text */
+    -webkit-background-clip: text; /* Use the gradient for the text */
+    background-clip: text; /* Support for non-webkit browsers */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Light shadow for contrast */
+    margin-bottom: 20px;
+    animation: shine 3s infinite alternate; /* Text shine effect */
+}
+
+/* Shine Effect Animation for Text */
+@keyframes shine {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+
+/* Image Styling */
+.face {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow for the image */
+    transition: transform 0.3s ease-in-out;
+}
+
+.face:hover {
+    transform: scale(1.1); /* Scale image on hover */
+}
+
+
+/* Add a little animation to the image container */
+.image-container:hover .face {
+    transform: rotate(10deg);
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+    .left-column {
+        padding: 20px;
+    }
+
+    .left-column h1 {
+        font-size: 2.5rem;
+    }
+
+    .face {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    width: 100%; /* Ensure the container takes the full width */
+}
+
+.image-container img {
+    width: 85%;
+    max-width: 500px; /* Optionally set a max width for the image */
+}
+
+
+.right-column {
+    flex: 2; /* Takes less space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-column h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.title-description p {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.details {
+    margin-bottom: 30px;
+}
+
+/* Buttons Styling */
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;  /* Adjusted padding for a bigger button */
+    border: none;
+    border-radius: 50px;  /* More rounded corners for a softer look */
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Smooth transition for all properties */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Bigger shadow for depth */
+    position: relative;
+}
+
+/* Hover Effects */
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.05);  /* Slightly grows the button on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* Stronger shadow */
+}
+
+/* Button Icon */
+.btn-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* Section Content - Flex Layout */
+
+
+.title-description h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Section 2: Design Rationale */
+.design-rationale {
+    background-color: var(--white);
+    padding: 40px var(--spacing);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Fade-in Effect */
+#design-rationale.visible {
+    opacity: 1;
+}
+
+/* Section Title and Text Styling */
+.section-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+    text-align: left;
+    margin-top: 20px;
+    max-width: 1200px;
+}
+
+/* Section Title Styles with Underline */
+.section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Underline styling */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin-top: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* Game Start Page Styling */
+.game-landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, var(--secondary-color), var(--bg-color)); /* Soft pastel gradient background */
+    text-align: center;
+    position: relative;
+    max-width: 1250px;
+    height: 100vh;
+    margin: auto;
+    padding: 40px var(--spacing);
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+}
+
+/* Ensure game-landing-content is always centered */
+.game-landing-content {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    width: 100%;
+    max-width: 700px;
+    position: absolute; /* Absolute positioning to allow centering */
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Center the content properly */
+    z-index: 1;
+}
+
+/* Star Container */
+.stars-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Each Star */
+.star {
+    position: absolute;
+    background-image: url('../img/landing-page/star.svg'); /* Use your star image here */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* You can adjust the size of the stars */
+    height: 50px;
+    opacity: 0.8;
+    animation: moveStars 60s linear infinite, glowingStars 1.5s ease-in-out infinite;
+}
+
+/* Animation for moving stars */
+@keyframes moveStars {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(100vh) translateX(100vw);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* Glowing effect for stars */
+@keyframes glowingStars {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+}
+
+/* Play Button Styling */
+.game-btn {
+    padding: 15px 40px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+/* Play Button Hover Effects */
+.game-btn:hover {
+    background-color: #ff66cc;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Play Button Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Logo and Text Animations */
+.game-logo {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 20px;
+    animation: bounce 1.5s infinite; /* Bouncing animation for logo */
+}
+
+.game-landing-text h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Cute text shadow for fun effect */
+    animation: slideIn 1s ease-out; /* Sliding in text animation */
+}
+
+
+/* Game Section */
+.game-section {
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, var(--secondary-color), var(--bg-color)); /* Soft pastel gradient background */
+    max-width: 1250px;
+    height: 100vh;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    padding: 40px var(--spacing);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Game Container */
+.game-container {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Left Column */
+.game-left-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 50%; /* Adjusting the width for side-by-side layout */
+}
+
+.game-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Column */
+.game-right-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%; /* Adjusting the width for side-by-side layout */
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Question Buttons */
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.option {
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px; /* Rounded buttons */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Correct Answer Feedback */
+.correct-feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: green;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Cute text shadow */
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(0, 255, 0, 0.2);
+    border: 2px solid green;
+    border-radius: 10px;
+    animation: correctMessage 1s ease-in-out;
+    display: none;
+}
+
+/* Incorrect Answer Feedback */
+.incorrect-feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Cute text shadow */
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 2px solid red;
+    border-radius: 10px;
+    animation: incorrectMessage 1s ease-in-out;
+    display: none;
+}
+
+/* Animation for correct feedback */
+@keyframes correctMessage {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation for incorrect feedback */
+@keyframes incorrectMessage {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+/* End Page */
+.end-section {
+    text-align: center;
+    padding: 40px var(--spacing);
+}
+
+.end-content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 40px var(--spacing);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background: var(--bg-color);
+    border-radius: 10px;
+}
+
+/* End Section Image */
+#end-image {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Adjust layout for smaller screens (iPhone 16 Pro Max) */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-column {
+        margin-bottom: 30px;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    /* Section Content - Stack vertically on mobile */
+    .section-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Left Column */
+    .left-column {
+        flex: 1;
+        order: 1; /* Ensures the left column comes first */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Right Column */
+    .right-column {
+        flex: 1;
+        order: 2; /* Ensures the right column comes after */
+    }
+
+    /* Banner Image on smaller screens */
+    .can-image img {
+        width: 100%;
+        border-radius: 20px;
+
+    }
+
+    /* Timeline and Buttons layout stacked vertically */
+    .timeline-buttons {
+        flex-direction: column;
+    }
+
+    .timeline {
+        margin-bottom: 25px;
+    }
+
+    .timeline, .buttons {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    /* Buttons Adjustments */
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .btn-icon {
+        font-size: 1.2rem; /* Adjust icon size for mobile */
+    }
+
+    /* Title and Description Styling Adjustments */
+    .title-description h1 {
+        font-size: 2rem; /* Smaller for mobile */
+    }
+
+    .title-description h2 {
+        font-size: 1.5rem; /* Smaller for mobile */
+    }
+
+    .description-text {
+        font-size: 1rem; /* Smaller for mobile */
+    }
+
+    .section-title::after {
+        width: 45%; /* Adjust underline width for mobile */
+    }
+
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-image {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .options {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .option {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .game-logo {
+        width: 50%;
+        max-width: 150px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .game-btn {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+    }
+
+    .game-landing-content {
+        padding: 20px; /* Reduce padding on mobile */
+        max-width: 90%; /* Take up more width on smaller screens */
+    }
+
+    .game-logo {
+        width: 90%;
+        max-width: 500px; /* Slightly smaller logo for mobile */
+    }
+
+    .game-btn {
+        font-size: 1.2rem; /* Adjust font size for better readability */
+        padding: 12px 30px;
+    }
+
+    .game-landing-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .stars-container {
+        display: none; /* Hide stars container for mobile */
+    }
+
+    
+}

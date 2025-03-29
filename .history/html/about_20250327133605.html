@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="/img/landing-page/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/index.html"><img src="../img/landing-page/logo.png" alt="Logo"></a>
+            </div>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul class="nav-links">
+                <div class="home-link">
+                    <a href="/index.html"><img src="../img/landing-page/logo-small-screen.svg" alt="Logo"></a>
+                </div>
+                <li><a href="/index.html#featured-projects">Projects</a></li>
+                <li><a href="/html/about.html" class="active-about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Starting Page -->
+        <section class="landing-container">
+            <div class="landing-content">
+                <div class="landing-text">
+                    <img id="game-logo" src="../img/landing-page/game-logo.png" alt="Game Logo">
+                    <h2>Help bunny dress up for her royal ball, and uncover fun facts about me in each step!</h2>
+                    <button id="play-button" class="btn" onclick="startGame()">Play</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Page -->
+        <section class="game-section" id="game-section" style="display:none;">
+            <div class="game-container">
+                <div class="left-column">
+                    <img id="dress-image" src="../img/game/dress1.png" alt="Dress" class="game-image">
+                </div>
+                <div class="right-column">
+                    <div id="question1">
+                        <h3>Question 1:</h3>
+                        <p>What's bunny's favorite color?</p>
+                        <button class="option" onclick="checkAnswer(1, 'blue')">Blue</button>
+                        <button class="option" onclick="checkAnswer(1, 'green')">Green</button>
+                        <button class="option" onclick="checkAnswer(1, 'pink')">Pink</button>
+                        <button class="option" onclick="checkAnswer(1, 'yellow')">Yellow</button>
+                        <p id="feedback1"></p>
+                    </div>
+                    <div id="question2" style="display:none;">
+                        <h3>Question 2:</h3>
+                        <p>What's bunny's favorite season?</p>
+                        <button class="option" onclick="checkAnswer(2, 'spring')">Spring</button>
+                        <button class="option" onclick="checkAnswer(2, 'summer')">Summer</button>
+                        <button class="option" onclick="checkAnswer(2, 'fall')">Fall</button>
+                        <button class="option" onclick="checkAnswer(2, 'winter')">Winter</button>
+                        <p id="feedback2"></p>
+                    </div>
+                    <div id="question3" style="display:none;">
+                        <h3>Question 3:</h3>
+                        <p>What animal does bunny adore?</p>
+                        <button class="option" onclick="checkAnswer(3, 'dog')">Dog</button>
+                        <button class="option" onclick="checkAnswer(3, 'cat')">Cat</button>
+                        <button class="option" onclick="checkAnswer(3, 'rabbit')">Rabbit</button>
+                        <button class="option" onclick="checkAnswer(3, 'horse')">Horse</button>
+                        <p id="feedback3"></p>
+                    </div>
+                    <div id="question4" style="display:none;">
+                        <h3>Question 4:</h3>
+                        <p>What's bunny's favorite food?</p>
+                        <button class="option" onclick="checkAnswer(4, 'carrot')">Carrot</button>
+                        <button class="option" onclick="checkAnswer(4, 'apple')">Apple</button>
+                        <button class="option" onclick="checkAnswer(4, 'banana')">Banana</button>
+                        <button class="option" onclick="checkAnswer(4, 'lettuce')">Lettuce</button>
+                        <p id="feedback4"></p>
+                    </div>
+                    <button id="next-button" class="btn" onclick="nextPage()">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Page (Success/Failure) -->
+        <section class="end-section" id="end-section" style="display:none;">
+            <div class="end-content">
+                <img id="end-image" src="../img/game/bunny-prince.png" alt="End Image">
+                <h3 id="end-message">Congratulations! You got it right!</h3>
+                <button class="btn" onclick="resetGame()">Play Again</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Footer content goes here -->
+    </footer>
+
+    <script src="/js/about.js"></script>
+</body>
+</html>
